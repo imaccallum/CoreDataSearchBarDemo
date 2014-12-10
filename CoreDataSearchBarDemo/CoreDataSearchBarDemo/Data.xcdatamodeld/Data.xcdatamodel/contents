@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contact" representedClassName="CoreDataSearchBarDemo.Contact" syncable="YES">
+        <attribute name="nameFirst" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="nameLast" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="-65" positionY="-154" width="128" height="73"/>
+    </elements>
+</model>
