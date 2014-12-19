@@ -139,9 +139,11 @@ extension ContactsViewController: UISearchBarDelegate, UISearchDisplayDelegate {
     
     func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
         
-        let firstNamePredicate = NSPredicate(format: "nameFirst CONTAINS[cd] %@", searchString.lowercaseString)
-        let lastNamePredicate = NSPredicate(format: "nameLast CONTAINS[cd] %@", searchString.lowercaseString)
-        let predicate = NSCompoundPredicate.orPredicateWithSubpredicates([firstNamePredicate!, lastNamePredicate!])
+//        let firstNamePredicate = NSPredicate(format: "nameFirst CONTAINS[cd] %@", searchString.lowercaseString)
+//        let lastNamePredicate = NSPredicate(format: "nameLast CONTAINS[cd] %@", searchString.lowercaseString)
+//        let predicate = NSCompoundPredicate.orPredicateWithSubpredicates([firstNamePredicate!, lastNamePredicate!])
+        
+//        let searchWildCardString = 
         
         searchResultsController = NSFetchedResultsController(fetchRequest: allContactsFetchRequest(predicate), managedObjectContext: managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
         searchResultsController?.performFetch(nil)
